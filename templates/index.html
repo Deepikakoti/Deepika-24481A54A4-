@@ -1,0 +1,32 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+
+        <title>simple Interset Calculator</title>
+    </head>
+    <body>
+        <center>
+            <h1 style="color: blue; "> Simple Interset Calculator<h1>
+
+            <form method="post">
+                <input type ="number" step ="any" name="p" id ="" placeholder="Principle">
+                <input type ="number" step ="any" name="t" id ="" placeholder="Time">
+                <input type ="number" step ="any" name="r" id ="" placeholder="Rate">
+                <button type ="Submit" > Calucalte Interset</button>
+
+                {# Display output #}
+                {% if result %}
+                <hr>
+                <h3>Result,<h3>
+                    <span>Principle: {{ p }}</span>
+                    <span>Rate: {{ r }}</span>
+                    <span>Time: {{ t }}</span>
+                    <span>
+                        <b>Simple Interset - {{ result }}</br> <br>
+                        <b> total Amount - {{ total }}</br>
+                    </span>
+                {% endif%}
+        </center>
+    </body>
+</html>
